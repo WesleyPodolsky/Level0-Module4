@@ -12,20 +12,25 @@ def setup():
     # Find a Where's Waldo picture and drop it onto the sketch.
     
     # Change the line below to match your file name.
-    waldo = loadImage("waldo.png")
+    waldo = loadImage("coolwaldo.jpg")
 
     # Use the size() function to set the width and height of your sketch
-    size(700,461)
+    size(1200,630)
     # Resize your waldo picture to the same size as the sketch
 
     # Use the background() function to make the waldo image your
     # sketch background
     background(waldo)
 def draw():
+    
     # If the user presses the mouse...
     # *Hint* use the mousePressed variable
-    if mousePressed and mouseX > 235 and mouseX < 400 and mouseY > 76 and mouseY <120:
-        text(20, 20, 'U FOUND ME AHHH')
+    if mousePressed and mouseX > 800 and mouseX < 830 and mouseY > 400 and mouseY <520:
+        background(0,0,0)
+        text('you found me',600,450)
+    elif mousePressed:
+        text('you no didnt not found me!',600,450)
+        play_woohoo()
         # Use this print statement to help you find the location
         # of Waldo to use in the code below
     
