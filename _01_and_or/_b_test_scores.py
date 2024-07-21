@@ -14,8 +14,7 @@ from tkinter import messagebox, simpledialog, Tk
 #   D = 59.5 to less than 69.5
 #   F = less than 59.5
 if __name__ == '__main__':
-    window = Tk()
-    window.withdraw()
+    c
 
     # TODO) Ask the user for their score on the FIRST test and store their
     #  score in a variable
